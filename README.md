@@ -22,7 +22,6 @@ FROM machines;
 ```
 
 <img width="885" height="675" alt="01-machines-table" src="https://github.com/user-attachments/assets/008a98fc-b19d-4040-a9a3-e39fe7cd3cf9" />
-*Screenshot provided by Google Cybersecurity Certificate lab environment*
 
 **Key Observations:**
 - The `machines` table contains hardware information such as `device_id` and `operating_system`.
@@ -42,7 +41,6 @@ INNER JOIN employees ON machines.device_id = employees.device_id;
 ```
 
 <img width="882" height="673" alt="02-inner-join-machines-employees" src="https://github.com/user-attachments/assets/4c161268-b4af-4d12-8a38-795d78f3a1bb" />
-*Screenshot provided by Google Cybersecurity Certificate lab environment*
 
 **Key Observations:**
 - An `INNER JOIN` returns only the rows where `device_id` matches in **both** tables.
@@ -72,7 +70,6 @@ LEFT JOIN employees ON machines.device_id = employees.device_id;
 ```
 
 <img width="886" height="712" alt="03-left-join" src="https://github.com/user-attachments/assets/d2d97918-1016-4426-b501-f7fbf5ab29f5" />
-*Screenshot provided by Google Cybersecurity Certificate lab environment*
 
 **Key Observations:**
 - All machines are listed.
@@ -91,7 +88,6 @@ RIGHT JOIN employees ON machines.device_id = employees.device_id;
 ```
 
 <img width="886" height="676" alt="04-right-join" src="https://github.com/user-attachments/assets/88de3ecd-f010-4782-9d3e-e39377a59128" />
-*Screenshot provided by Google Cybersecurity Certificate lab environment*
 
 **Key Observations:**
 - All employees are listed.
@@ -110,7 +106,6 @@ INNER JOIN log_in_attempts ON employees.username = log_in_attempts.username;
 ```
 
 <img width="885" height="637" alt="05-inner-join-login-attempts" src="https://github.com/user-attachments/assets/20e4e3b5-3800-48f7-ac30-c02617161947" />
-*Screenshot provided by Google Cybersecurity Certificate lab environment*
 
 **Key Observations:**
 - Each login attempt is now linked to the employee who made it.
